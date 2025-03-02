@@ -7,9 +7,12 @@ function App(){
     const newTodoList = [...todoList, newTodos]
     setTodoList(newTodoList)
   }
+  function handleCompleted(){
+
+  }
   return (
     <div className="bg-slate-950 h-screen text-white p-10">
-      <Todoinput handleAddToDo={handleAddToDo} />
+      <Todoinput handleAddToDo={handleAddToDo} handleCompleted={handleCompleted} />
       <Todolist todos={todoList} />
     </div>
   )
