@@ -5,7 +5,7 @@ export default function Todocard(props){
             {props.todoItems}
             <div>
                 <i className="fa-regular fa-pen-to-square mr-3"></i>
-                <i className="fa-solid fa-trash mr-3"></i>
+                <i onClick={()=>props.handleDeleteTodo(props.index)} className="fa-solid fa-trash mr-3"></i>
                 <i className="fa-solid fa-check"></i>
             </div>                            
         </div>
